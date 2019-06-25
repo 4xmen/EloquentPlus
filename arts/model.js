@@ -11,12 +11,12 @@ exports.make = (name) => {
 // 4xmen under GPL-3 License 
 // import modules
 
-class ${name} extends Eloquent {
+class ${name} extends Model {
 
 }
     `, (e) => {
         if (e == null)
-            console.log(`${name} class created successfully : ) `);
+            console.log(`${name} model class created successfully : ) `);
     });
 
 };
