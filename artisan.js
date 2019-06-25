@@ -2,8 +2,6 @@
 var env = require('dotenv').config();
 var mysql = require('mysql');
 
-
-
 // db connect
 var dbh = mysql.createConnection({
     host: process.env.DB_HOST,
@@ -27,10 +25,15 @@ switch (cmdln[0]) {
         break;
 
     case 'make:model':
+        if (cmdln[1] != undefined) {
+            require('./arts/model').make(cmdln[1]);
+        } else {
+            console.log('The model name is empty : | ');
+        }
         break;
 
     default:
-        console.log('undefined command :( ');
+        console.log('undefined command : ( ');
 
 }
 

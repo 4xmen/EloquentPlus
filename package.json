@@ -25,6 +25,7 @@
   "homepage": "https://github.com/4xmen/EloquentPlus#readme",
   "dependencies": {
     "dotenv": "^8.0.0",
+    "fs": "^0.0.1-security",
     "mysql": "^2.17.1"
   }
 }
