@@ -1,5 +1,10 @@
+// require maudols 
 var env = require('dotenv').config();
 var mysql = require('mysql');
+
+
+
+// db connect
 var dbh = mysql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
@@ -8,9 +13,11 @@ var dbh = mysql.createConnection({
 });
 
 
-
+// get command line agruman
 var cmdln = process.argv.slice(2);
 
+
+// handle command line agrumans
 switch (cmdln[0]) {
     case 'list':
     case 'help':
