@@ -189,3 +189,7 @@ modules.xml
 # End of https://www.gitignore.io/api/node,phpstorm+all,visualstudiocode
 
 yarn.lock
+
+database/migrations/*.js
+app/*.js
+app/Http/*.js
