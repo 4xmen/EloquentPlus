@@ -1,6 +1,7 @@
 class Model {
 
-    constructor(tableName){
+    constructor(tableName) {
         this.tableName = tableName;
     }
+
 }

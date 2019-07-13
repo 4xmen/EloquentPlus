@@ -1,0 +1,5 @@
+class Schema {
+    create = (table) => {
+
+    }
+}
